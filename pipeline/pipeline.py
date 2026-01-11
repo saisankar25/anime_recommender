@@ -16,11 +16,11 @@ class AnimeRecommenderPipeline:
             self.recommender = AnimeRecommender(retriever=retriever, api_key=GROQ_API_KEY, model_name=MODEL_NAME)
             logger.info("AnimeRecommenderPipeline initialized successfully")
         except Exception as e:
-            raise CustomException(e, sys)
+            raise CustomException("Pipeline Initialization Failed", e)
 
     def recommend(self, query: str) -> str:
         try:
             logger.info("Recommendation started")
             return self.recommender.get_recommendation(query)
         except Exception as e:
-            raise CustomException(e, sys)
+            raise CustomException("Recommendation Failed", e)

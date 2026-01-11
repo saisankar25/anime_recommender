@@ -20,7 +20,7 @@ def main():
         logger.info("Vector store built successfully")
         logger.info("Pipeline built successfully")
     except Exception as e:
-        raise CustomException(e,sys)
+        raise CustomException("Pipeline Build Failed", e)
 
 if __name__ == "__main__":
     main()
