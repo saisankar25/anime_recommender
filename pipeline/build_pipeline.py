@@ -1,5 +1,4 @@
 from src.data_loader import AnimeDataLoader
-import sys
 from src.vector_store import VectorStoreBuilder
 from dotenv import load_dotenv
 from utils.logger import get_logger
