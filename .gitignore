@@ -33,7 +33,6 @@ logs/
 *.log
 
 # Project specific
-data/
 Chroma_db/
 chromadb/
 
