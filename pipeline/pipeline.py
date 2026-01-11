@@ -3,7 +3,7 @@ from src.recommender import AnimeRecommender
 from config.config import GROQ_API_KEY, MODEL_NAME
 from utils.logger import get_logger
 from utils.CustomException import CustomException
-import sys
+
 
 logger = get_logger(__name__)
 
